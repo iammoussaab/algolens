@@ -1,58 +1,120 @@
+/* Footer.css */
+
+/* Footer Styles */
 .footer {
 	background-color: #333;
 	color: #fff;
-	padding: 20px 0;
+	padding: 20px 0px;
 	text-align: center;
+	width: 100%;
+	position: relative;
 }
 
+/* Container for footer content */
 .footer-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
+/* Section Styles for footer */
 .footer-section {
 	flex: 1;
+	/* Allow sections to grow evenly */
 	min-width: 250px;
-	margin: 10px;
+	/* Minimum width for smaller screens */
+	margin: 20px;
+	/* Margin between sections */
 }
 
 .footer-section h3 {
 	border-bottom: 2px solid #fff;
+	text-align: center;
 	padding-bottom: 10px;
+	/* Space below heading */
 	margin-bottom: 10px;
+	/* Space above heading */
+	font-size: 20px;
+	/* Increased font size for visibility */
 }
 
 .footer-section p,
 .footer-section ul {
 	margin: 0;
+	/* Remove default margin */
 	padding: 0;
+	/* Remove default padding */
 	list-style: none;
+	/* Remove list styles */
 }
 
 .footer-section ul li {
-	margin: 5px 0;
+	margin: 10px 0;
+	/* Increased spacing for list items */
 }
 
 .footer-section ul li a {
 	color: #fff;
+	/* White text for links */
 	text-decoration: none;
+	/* Remove underline from links */
+	transition: color 0.3s;
+	/* Smooth color transition on hover */
 }
 
 .footer-section ul li a:hover {
+	color: #007bff;
+	/* Change color on hover */
 	text-decoration: underline;
+	/* Underline on hover for emphasis */
 }
 
 .footer-section ul li img {
-	width: 24px;
-	height: 24px;
+	width: 30px;
+	/* Increased icon size for better visibility */
+	height: 30px;
+	/* Increased icon size for better visibility */
 	margin-right: 10px;
+	/* Space next to icons */
 	vertical-align: middle;
+	/* Align icons vertically */
 }
 
+/* Footer paragraph at the bottom */
 .footer p {
 	margin-top: 20px;
+	/* Space above paragraph */
 	font-size: 14px;
+	/* Font size for footer paragraph */
+}
+
+/* Footer bottom container styling to center it */
+.footer-bottom {
+	display: flex;
+	justify-content: center;
+	/* Center horizontally */
+	align-items: center;
+	/* Center vertically */
+	padding: 10px 0;
+	/* Padding for bottom section */
+}
+
+/* Mobile Styles for Footer */
+@media (max-width: 768px) {
+	.footer-container {
+		flex-direction: column;
+		/* Stack sections on smaller screens */
+		align-items: center;
+		/* Center align sections */
+	}
+
+	.footer-section {
+		min-width: 100%;
+		/* Full width for each section */
+		margin: 10px 0;
+		/* Margin between sections */
+	}
 }

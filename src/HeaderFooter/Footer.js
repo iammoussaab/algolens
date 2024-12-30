@@ -9,7 +9,7 @@ function Foot() {
 					<div className="footer-section about">
 						<h3>About Us</h3>
 						<p>
-							AlgoLens is a web plaatfrom that provides interactive visualizations ans sorts Algorithms.
+							AlgoLens is a web plaatfrom that provides interactive visualizations and sorts Algorithms.
 							Our mission is to make complex concepts simple and fun!
 						</p>
 					</div>
@@ -34,7 +34,9 @@ function Foot() {
 						</ul>
 					</div>
 				</div>
-				<p>&copy; 2024 AlgoLens. All rights reserved.</p>
+				<div className="footer-bottom">
+					<p>&copy; 2024 AlgoLens. All rights reserved.</p>
+				</div>
 			</footer>
 		</>
 	);
