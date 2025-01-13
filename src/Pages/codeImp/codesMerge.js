@@ -1,4 +1,4 @@
-var codes = {
+var codesMerge = {
 	C: `
   void merge(int arr[], int l, int m, int r)
   {
@@ -208,4 +208,4 @@ var codes = {
 			  k += 1`,
 };
 
-export default codes;
+export default codesMerge;

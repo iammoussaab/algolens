@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
-import codes from '../codeImp/codesMerge';
+import React from 'react';
 import MergeSortVisualizer from './MergeSortVisualizer';
+import Implementation from '../../codeImp/CodesImplementation';
+import codesMerge from '../../codeImp/codesMerge';
 
 function Merge() {
-	const [selectedLanguage, setSelectedLanguage] = useState('C');
-
-	const handleButtonClick = (language) => {
-		setSelectedLanguage(language);
-	};
 	return (
 		<>
 			<div>
@@ -56,23 +52,7 @@ function Merge() {
 					</tbody>
 				</table>
 			</div>
-			<div className='codeImplement'>
-				<h2>Code Implementation</h2>
-				<div id="menu-code" data-aos="fade-right">
-					<div className="menu-btns" id="menu-btns">
-						<button onClick={() => handleButtonClick('C')} title="C">    <img src="https://img.icons8.com/?size=30&id=40670&format=png&color=000000" alt="C" /></button>
-						<button onClick={() => handleButtonClick('C++')} title="C++"><img src="https://img.icons8.com/?size=30&id=40669&format=png&color=000000" alt="C++" /></button>
-						<button onClick={() => handleButtonClick('Java')} title="Java"><img src="https://img.icons8.com/?size=30&id=13679&format=png&color=000000" alt="Java" /></button>
-						<button onClick={() => handleButtonClick('JavaScript')} title="JavaScript"><img src="https://img.icons8.com/?size=30&id=108784&format=png&color=000000" alt="JavaScript" /></button>
-						<button onClick={() => handleButtonClick('Python')} title="Python"><img src="https://img.icons8.com/?size=30&id=13441&format=png&color=000000" alt="Python" /></button>
-					</div>
-					<pre>
-						<code id="code">
-							{codes[selectedLanguage]}
-						</code>
-					</pre>
-				</div>
-			</div>
+			<Implementation codes={codesMerge} />
 		</>
 	);
 }

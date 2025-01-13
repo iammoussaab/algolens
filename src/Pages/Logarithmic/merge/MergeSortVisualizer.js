@@ -28,12 +28,10 @@ const merge = async (left, right, setArray, delay) => {
 			rightIndex++;
 		}
 		setArray([...resultArray, ...left.slice(leftIndex), ...right.slice(rightIndex)]);
-		await new Promise(resolve => setTimeout(resolve, delay));
+		await new Promise((resolve) => setTimeout(resolve, delay));
 	}
 
-	resultArray = [...resultArray, ...left.slice(leftIndex), ...right.slice(rightIndex)];
-	setArray(resultArray);
-	return resultArray;
+	return [...resultArray, ...left.slice(leftIndex), ...right.slice(rightIndex)];
 };
 
 const MergeSortVisualizer = () => {
@@ -45,14 +43,13 @@ const MergeSortVisualizer = () => {
 		const maxValue = parseInt(document.getElementById('maxValue').value, 10);
 
 		if (isNaN(arraySize) || arraySize <= 0 || minValue > maxValue) {
-			alert("Please enter valid input values.");
+			alert('Please enter valid input values.');
 			return;
 		}
 
 		const newArray = Array.from({ length: arraySize }, () =>
 			Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue
 		);
-
 		setArray(newArray);
 	};
 
@@ -63,35 +60,36 @@ const MergeSortVisualizer = () => {
 
 	return (
 		<div className="merge-sort-visualizer">
+			<h1>Merge Sort Visualizer</h1>
 			<div className="controls">
 				<label>
 					Array Size:
-					<input type="number" id="arraySize" defaultValue={10} />
+					<input type="number" id="arraySize" defaultValue={10} min="5" max="100" />
 				</label>
 				<label>
 					Min Value:
-					<input type="number" id="minValue" defaultValue={1} />
+					<input type="number" id="minValue" defaultValue={1} min="1" max="100" />
 				</label>
 				<label>
 					Max Value:
-					<input type="number" id="maxValue" defaultValue={100} />
+					<input type="number" id="maxValue" defaultValue={100} min="10" max="1000" />
 				</label>
 				<label>
 					Sorting Speed:
 					<input type="range" id="speed" min="10" max="1000" defaultValue={100} />
 				</label>
-				<button id="generateArray" onClick={generateArray}>Generate Array</button>
-				<button id="startSort" onClick={startSort}>Start Sort</button>
+				<button onClick={generateArray}>Generate Array</button>
+				<button onClick={startSort}>Start Sort</button>
 			</div>
-			<div id="sort-container">
+
+			<div className="sort-container">
 				{array.map((value, index) => (
 					<div
 						key={index}
-						className="element"
+						className="bar"
 						style={{
-							left: `${(index / array.length) * 100}%`,
+							height: `${(value / Math.max(...array)) * 100}%`,
 							width: `${100 / array.length}%`,
-							height: `${(value / Math.max(...array)) * 100}%`
 						}}
 					></div>
 				))}

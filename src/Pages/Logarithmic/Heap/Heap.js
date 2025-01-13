@@ -1,7 +1,12 @@
+import codesHeap from "../../codeImp/CodesHeap";
+import Implementation from "../../codeImp/CodesImplementation";
+import HeapSortVisualizer from "./HeapSortVisualizer";
+
 function HeapSort() {
 
 	return (
 		<>
+			<HeapSortVisualizer />
 			<div>
 				<h1>Heap Sort</h1>
 				<p>
@@ -15,6 +20,36 @@ function HeapSort() {
 					The data structure gets ordered to form the heap initially, and then it gets progressively reordered with an algorithm similar to <a href="/selectionsort">Selection Sort</a>, starting from the bigger elements.
 				</p>
 			</div>
+			<div>
+				<h2>Complexity</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Case</th>
+							<th>Time Complexity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Average</td>
+							<td>O(n × log n)</td>
+						</tr>
+						<tr>
+							<td>Worst</td>
+							<td>O(n × log n)</td>
+						</tr>
+						<tr>
+							<td>Best</td>
+							<td>O(n × log n)</td>
+						</tr>
+						<tr>
+							<td>Space Complexity</td>
+							<td>O(1)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<Implementation codes={codesHeap} />
 		</>
 	);
 
