@@ -50,6 +50,7 @@ function Home() {
 				<h1 ref={outputRef} className="animated-title"> </h1>
 				<p className="intro-text">
 					Welcome to AlgoLens! This is a platform where you can learn about
+					<br />
 					algorithms and data structures through interactive visualizations.
 				</p>
 			</div>
@@ -83,6 +84,15 @@ function Home() {
 						</p>
 						<p>
 							An example is <span className="highlight">Bubble Sort</span>, where adjacent items are swapped repeatedly until everything is sorted.
+						</p>
+					</li>
+					<li>
+						<strong>Weird Sort (Unconventional Algorithms):</strong>
+						<p>
+							These algorithms use unconventional methods to sort data and are often used for educational purposes or specific niche applications.
+						</p>
+						<p>
+							An example is <span className="highlight">Bogo Sort</span>, which randomly shuffles the data until it is sorted. It is highly inefficient but interesting to study.
 						</p>
 					</li>
 				</ul>

@@ -1,0 +1,35 @@
+.merge-sort-visualizer {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
+
+.controls {
+	margin-bottom: 20px;
+}
+
+.controls label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#sort-container {
+	position: relative;
+	height: 300px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	margin-bottom: 20px;
+}
+
+.element {
+	position: absolute;
+	background-color: #3498db;
+	transition: background-color 0.3s, height 0.3s;
+}
+
+.element.active {
+	background-color: #e74c3c;
+}
+
+.element.sorted {
+	background-color: #2ecc71;
+}

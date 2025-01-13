@@ -14,9 +14,9 @@ function Header() {
 						<li className="nav-item">
 							<a href="/logarithmic">Logarithmic</a>
 							<ul className="sub-menu">
-								<li><a href="/logarithmic/sorting">Quick Sort</a></li>
-								<li><a href="/logarithmic/searching">Merge Sort</a></li>
-								<li><a href="/logarithmic/graph">Heap Sort</a></li>
+								<li><a href="/logarithmic/Quick">Quick Sort</a></li>
+								<li><a href="/logarithmic/Merge">Merge Sort</a></li>
+								<li><a href="/logarithmic/Heap">Heap Sort</a></li>
 							</ul>
 						</li>
 						<li className="nav-item">
