@@ -12,6 +12,10 @@ import Insertion from "./Pages/Quadratic/Insertion/Insertion";
 import Gnome from "./Pages/Quadratic/Gnome/Gnome";
 import Shaker from "./Pages/Quadratic/Shaker/Shaker";
 import Odd from "./Pages/Quadratic/Odd/Odd";
+import Pancake from "./Pages/Quadratic/Pancake/Pancake";
+import Shell from "./Pages/Weird/Shell/Shell";
+import Comb from "./Pages/Weird/Comb/Comb";
+import Biitonic from "./Pages/Weird/Bitonic/Bitonic";
 
 function App() {
   return (
@@ -29,9 +33,12 @@ function App() {
           <Route path="Quadratic/Gnome" element={<Gnome />} />
           <Route path="Quadratic/Shaker" element={<Shaker />} />
           <Route path="Quadratic/Odd" element={<Odd />} />
-
+          <Route path="Quadratic/Pancake" element={<Pancake />} />
+          <Route path="Weird/Bitonic" element={<Biitonic />} />
+          <Route path="Weird/Shell" element={<Shell />} />
+          <Route path="Weird/Comb" element={<Comb />} />
         </Routes>
-      </Router>
+      </Router >
       <Foot />
     </>
   );

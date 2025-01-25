@@ -1,6 +1,6 @@
 
 const codesPancake = {
-	"C": `
+    "C": `
 void flip(int* arr, int k) {
     int left = 0;
     while (left < k) {
@@ -33,7 +33,7 @@ void pancakeSort(int* arr, int n) {
         n--;
     }
 }`,
-	"C++": `
+    "C++": `
 void flip(int* arr, int k) {
     int left = 0;
     while (left < k) {
@@ -66,7 +66,7 @@ void pancakeSort(int* arr, int n) {
         n--;
     }
 }`,
-	"Java": `
+    "Java": `
 public static void flip(int[] arr, int k) {
     int left = 0;
     while (left < k) {
@@ -100,7 +100,7 @@ public static void pancakeSort(int[] arr) {
         n--;
     }
 }`,
-	"JavaScript": `
+    "JavaScript": `
 function flip(arr, k) {
     let left = 0;
     while (left < k) {
@@ -131,7 +131,7 @@ function pancakeSort(arr) {
         n--;
     }
 }`,
-	"Python": `
+    "Python": `
 def flip(arr, k):
   left = 0
   while left < k:
