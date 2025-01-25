@@ -1,5 +1,5 @@
-var codesBubble = {
-	"C": `
+const codesBubble = {
+    "C": `
 void bubble_sort(long arr[], long n) {
   long c, d, t;
 
@@ -13,7 +13,7 @@ void bubble_sort(long arr[], long n) {
     }
   }
 }`,
-	"C++": `
+    "C++": `
 void swap(int *xp, int *yp) {
     int temp = *xp;
     *xp = *yp;
@@ -28,7 +28,7 @@ void bubbleSort(int arr[], int n) {
             if (arr[j] > arr[j+1])
                 swap(&arr[j], &arr[j+1]);
 }`,
-	"Java": `
+    "Java": `
 static void bubbleSort(int[] arr) {
     int n = arr.length;
     int temp = 0;
@@ -42,19 +42,19 @@ static void bubbleSort(int[] arr) {
         }
     }
 }`,
-	"JavaScript": `
+    "JavaScript": `
 function bubbleSort(arr) {
-    for(var i = 0; i < arr.length; i++) {
-        for(var j = 0; j < ( arr.length - i -1 ); j++) {
+    for(const i = 0; i < arr.length; i++) {
+        for(const j = 0; j < ( arr.length - i -1 ); j++) {
             if(arr[j] > arr[j+1]) {
-              var temp = arr[j]
+              const temp = arr[j]
               arr[j] = arr[j + 1]
               arr[j+1] = temp
             }
         }
     }
 }`,
-	"Python": `
+    "Python": `
 def bubbleSort(arr):
     n = len(arr)
     for i in range(n-1):

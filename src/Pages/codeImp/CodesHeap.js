@@ -1,6 +1,6 @@
 
-var codesHeap = {
-	"C": `
+const codesHeap = {
+  "C": `
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
@@ -34,7 +34,7 @@ void heapSort(int arr[], int n) {
     }
 }`,
 
-	"C++": `
+  "C++": `
 void heapify(int arr[], int n, int i) {
     int largest = i;
     int left = 2 * i + 1;
@@ -62,7 +62,7 @@ void heapSort(int arr[], int n) {
     }
 }`,
 
-	"Java": `
+  "Java": `
 public void sort(int arr[]) {
       int n = arr.length;
 
@@ -99,7 +99,7 @@ void heapify(int arr[], int n, int i) {
     }
 }`,
 
-	"JavaScript": `
+  "JavaScript": `
 function heapSort(array) {
   let size = array.length
 
@@ -134,7 +134,7 @@ function heapify(array, size, i) {
   }
 }`,
 
-	"Python": `
+  "Python": `
 def heapify(arr, n, i):
   largest = i
   l = 2 * i + 1

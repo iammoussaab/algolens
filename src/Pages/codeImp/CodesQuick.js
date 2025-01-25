@@ -1,6 +1,6 @@
 
-var codesQuick = {
-	"C": `
+const codesQuick = {
+  "C": `
 void swap(int *a, int *b) {
   int t = *a;
   *a = *b;
@@ -35,7 +35,7 @@ void quickSort(int array[], int low, int high) {
 }`,
 
 
-	"C++": `
+  "C++": `
 void swap(int* a, int* b)
 {
     int t = *a;
@@ -70,7 +70,7 @@ void quickSort(int arr[], int low, int high)
         quickSort(arr, pivot + 1, high);
     }
 }`,
-	"Java": `
+  "Java": `
 public void quickSort(int arr[], int begin, int end) {
     if (begin < end) {
         int partitionIndex = partition(arr, begin, end);
@@ -100,7 +100,7 @@ private int partition(int arr[], int begin, int end) {
 
     return i+1;
 }`,
-	"JavaScript": `
+  "JavaScript": `
 function quickSort(array, start, end) {
   if (start === undefined) {
     start = 0;
@@ -108,13 +108,13 @@ function quickSort(array, start, end) {
   } else if (start >= end) {
     return array;
   }
-  var rStart = start, rEnd = end;
-  var pivot = array[Math.floor(Math.random() * (end - start + 1) + start)];
+  const rStart = start, rEnd = end;
+  const pivot = array[Math.floor(Math.random() * (end - start + 1) + start)];
   while (start < end) {
     while (array[start] <= pivot) start++;
     while (array[end] > pivot) end--;
     if (start < end) {
-      var temp = array[start];
+      const temp = array[start];
       array[start] = array[end];
       array[end] = temp;
     }
@@ -122,7 +122,7 @@ function quickSort(array, start, end) {
   quickSort(array, rStart, start - 1);
   quickSort(array, start, rEnd);
 }`,
-	"Python": `
+  "Python": `
 def partition(array, start, end):
     pivot = array[start]
     low = start + 1

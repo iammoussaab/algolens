@@ -1,4 +1,4 @@
-var codesMerge = {
+const codesMerge = {
 	C: `
   void merge(int arr[], int l, int m, int r)
   {
