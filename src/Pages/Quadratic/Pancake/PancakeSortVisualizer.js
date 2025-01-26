@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './PancakeSortVisualizer.css';
+import '../../css/PancakeSortVisualizer.css';
 
 const PancakeSortVisualizer = () => {
 	const [elements, setElements] = useState([]);

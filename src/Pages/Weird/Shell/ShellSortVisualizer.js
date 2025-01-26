@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ShellSortVisualizer.css'; // Add some basic styles
+import '../../css/ShellSortVisualizer.css'; // Add some basic styles
 
 const ShellSortVisualizer = () => {
 	const [elements, setElements] = useState([]);

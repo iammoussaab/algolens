@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import "./BubbleSortVisualizer.css";
+import "../../css/BubbleSortVisualizer.css";
 
 const BubbleSortVisualizer = () => {
 	const [elements, setElements] = useState([]);

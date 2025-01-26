@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MergeSortVisualizer.css';
+import '../../css/MergeSortVisualizer.css';
 
 const mergeSort = async (array, setArray, delay) => {
 	if (array.length <= 1) return array;

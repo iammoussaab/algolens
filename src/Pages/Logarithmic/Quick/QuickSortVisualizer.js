@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './QuickSortVisualizer.css';
+import '../../css/QuickSortVisualizer.css';
 
 const quickSort = async (array, left, right, setArray, delay) => {
 	if (left >= right) return;

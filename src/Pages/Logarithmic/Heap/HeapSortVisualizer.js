@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./HeapSortVisualizer.css"; // Import the CSS file
+import "../../css/HeapSortVisualizer.css"; // Import the CSS file
 
 const HeapSortVisualizer = () => {
 	const [elements, setElements] = useState([]);

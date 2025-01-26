@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './OddSortVisualizer.css'; // Add some basic styles
+import '../../css/OddSortVisualizer.css'; // Add some basic styles
 
 const OddSortVisualizer = () => {
 	const [elements, setElements] = useState([]);

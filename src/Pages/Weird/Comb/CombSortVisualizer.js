@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './CombSortVisualizer.css'; // Add some basic styles
+import '../../css/CombSortVisualizer.css'; // Add some basic styles
 
 const CombSortVisualizer = () => {
 	const [elements, setElements] = useState([]);

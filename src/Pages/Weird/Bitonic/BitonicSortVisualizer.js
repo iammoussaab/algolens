@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './BitonicSortVisualizer.css'; // Add some basic styles
+import '../../css/BitonicSortVisualizer.css'; // Add some basic styles
 
 const BitonicSortVisualizer = () => {
 	const [elements, setElements] = useState([]);
