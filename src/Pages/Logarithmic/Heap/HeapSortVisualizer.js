@@ -63,7 +63,7 @@ const HeapSortVisualizer = () => {
 	};
 
 	return (
-		<div className="heap-sort-container">
+		<div className="sort-algorithm-container">
 			<h1>Heap Sort Visualizer</h1>
 			<div className="bars-container">
 				{elements.map((value, index) => (
@@ -74,8 +74,8 @@ const HeapSortVisualizer = () => {
 					/>
 				))}
 			</div>
-			<div className="buttons-container">
-				<button onClick={heapSort} disabled={running}>
+			<div className="controls-container">
+				<button id="start-button" onClick={heapSort} disabled={running}>
 					{running ? "Sorting..." : "Start Heap Sort"}
 				</button>
 				<button onClick={generateRandomArray} disabled={running}>

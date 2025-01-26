@@ -1,5 +1,5 @@
-/* Bitonic Sort Container */
-.bitonic-sort-container {
+/* Global Styles */
+.sort-algorithm-container {
 	text-align: center;
 	min-height: 100vh;
 	padding: 20px;
@@ -36,7 +36,6 @@ h1 {
 
 .bar:hover {
 	background-color: #2ecc71;
-	/* Highlight color on hover */
 }
 
 /* Controls Container */
@@ -56,36 +55,16 @@ button {
 	border-radius: 5px;
 	background-color: #45a29e;
 	color: white;
-	transition: background-color 0.3s ease, transform 0.2s ease;
+	transition: background-color 0.3s ease;
 }
 
 button:hover {
 	background-color: #66fcf1;
-	transform: scale(1.05);
-	/* Slight scale effect on hover */
 }
 
 button:disabled {
 	background-color: #95a5a6;
 	cursor: not-allowed;
-	transform: none;
-	/* Disable hover effect when button is disabled */
-}
-
-/* Specific Button Styles */
-#start-button {
-	background-color: #2ecc71;
-	/* Green for the start button */
-}
-
-#start-button:hover {
-	background-color: #27ae60;
-	/* Darker green on hover */
-}
-
-#start-button:disabled {
-	background-color: #7f8c8d;
-	/* Gray when disabled */
 }
 
 /* Speed Control */
@@ -97,11 +76,6 @@ button:disabled {
 
 .speed-control input {
 	width: 150px;
-}
-
-.speed-control span {
-	font-size: 14px;
-	color: #f9f9f9;
 }
 
 /* Algorithm Info Section */
