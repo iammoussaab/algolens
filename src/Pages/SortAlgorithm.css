@@ -1,0 +1,31 @@
+.sort-algorithm-container {
+	text-align: center;
+	min-height: 100vh;
+	color: #ffffff;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.sort-algorithm-info {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.sort-algorithm-info p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.sort-algorithm-info ul {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+.sort-algorithm-info li {
+	margin-bottom: 10px;
+}

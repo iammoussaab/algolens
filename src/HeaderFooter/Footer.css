@@ -44,44 +44,39 @@
 .footer-section p,
 .footer-section ul {
 	margin: 0;
-	/* Remove default margin */
 	padding: 0;
-	/* Remove default padding */
 	list-style: none;
-	/* Remove list styles */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Center the items horizontally */
+	align-items: center;
+	/* Align items to the left */
 }
 
 .footer-section ul li {
-	margin: 10px 0;
-	/* Increased spacing for list items */
+	margin: 0 15px;
+	/* Horizontal spacing between list items */
 }
 
 .footer-section ul li a {
 	color: #fff;
-	/* White text for links */
 	text-decoration: none;
-	/* Remove underline from links */
 	transition: color 0.3s;
-	/* Smooth color transition on hover */
 }
 
 .footer-section ul li a:hover {
 	color: #007bff;
-	/* Change color on hover */
 	text-decoration: underline;
-	/* Underline on hover for emphasis */
 }
 
 .footer-section ul li img {
 	width: 30px;
-	/* Increased icon size for better visibility */
 	height: 30px;
-	/* Increased icon size for better visibility */
 	margin-right: 10px;
-	/* Space next to icons */
 	vertical-align: middle;
-	/* Align icons vertically */
 }
+
 
 /* Footer paragraph at the bottom */
 .footer p {

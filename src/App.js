@@ -16,8 +16,9 @@ import Pancake from "./Pages/Quadratic/Pancake/Pancake";
 import Shell from "./Pages/Weird/Shell/Shell";
 import Comb from "./Pages/Weird/Comb/Comb";
 import Biitonic from "./Pages/Weird/Bitonic/Bitonic";
-import Bogo from "./Pages/Weird/Bogo/Bogo";
 import Radix from "./Pages/Weird/Radix/Radix";
+import Contact from "./Pages/contact";
+import SortAlgorithm from "./Pages/SortAlgorithm";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/sortAlgorithm" element={<SortAlgorithm />} />
           <Route path="Logarithmic/Heap" element={<HeapSort />} />
           <Route path="Logarithmic/Merge" element={<Merge />} />
           <Route path="Logarithmic/Quick" element={<Quick />} />
