@@ -20,7 +20,8 @@ h1 {
 
 .contact-info p {
 	font-size: 1.2em;
-	color: #ffffff;
+	color: #333;
+	;
 }
 
 .contact-links ul {
@@ -59,7 +60,8 @@ h1 {
 .form-group label {
 	font-size: 1.1em;
 	margin-bottom: 5px;
-	color: #ffffff;
+	color: #333;
+	;
 }
 
 .contact-form input,

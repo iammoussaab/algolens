@@ -1,4 +1,4 @@
-import './SortAlgorithm.css'; // Assuming you'll create this CSS file for styling
+import './css/SortAlgorithm.css'; // Assuming you'll create this CSS file for styling
 
 const SortAlgorithm = () => {
 	return (

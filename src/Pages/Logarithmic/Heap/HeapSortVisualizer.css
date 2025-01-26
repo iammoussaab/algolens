@@ -3,7 +3,8 @@
 	text-align: center;
 	background-color: #1a1a1a;
 	min-height: 100vh;
-	color: #ffffff;
+	color: #333;
+	;
 	padding: 20px;
 }
 
@@ -39,7 +40,8 @@ button {
 	border-radius: 4px;
 	cursor: pointer;
 	background-color: #45a29e;
-	color: #ffffff;
+	color: #333;
+	;
 	transition: background-color 0.3s ease;
 }
 
