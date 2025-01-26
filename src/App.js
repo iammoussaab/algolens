@@ -16,6 +16,8 @@ import Pancake from "./Pages/Quadratic/Pancake/Pancake";
 import Shell from "./Pages/Weird/Shell/Shell";
 import Comb from "./Pages/Weird/Comb/Comb";
 import Biitonic from "./Pages/Weird/Bitonic/Bitonic";
+import Bogo from "./Pages/Weird/Bogo/Bogo";
+import Radix from "./Pages/Weird/Radix/Radix";
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
           <Route path="Weird/Bitonic" element={<Biitonic />} />
           <Route path="Weird/Shell" element={<Shell />} />
           <Route path="Weird/Comb" element={<Comb />} />
+          <Route path="Weird/Radix" element={<Radix />} />
         </Routes>
       </Router >
       <Foot />

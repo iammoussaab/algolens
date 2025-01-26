@@ -37,8 +37,6 @@ function Header() {
 								<li><a href="/Weird/Shell">Shell Sort</a></li>
 								<li><a href="/Weird/Comb">Comb Sort</a></li>
 								<li><a href="/Weird/Bitonic">Bitonic Sort</a></li>
-								<li><a href="/Weird/Bogo">Bogo Sort</a></li>
-								<li><a href="/Weird/Stooge">Stooge Sort</a></li>
 								<li><a href="/Weird/Radix">Radix Sort</a></li>
 							</ul>
 						</li>

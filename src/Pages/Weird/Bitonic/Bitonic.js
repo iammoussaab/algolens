@@ -1,6 +1,11 @@
+import BitonicSortVisualizer from "./BitonicSortVisualizer"
+
 const Biitonic = () => {
 	return (
 		<>
+			<div>
+				<BitonicSortVisualizer />
+			</div>
 			<div>
 				<h1>Bitonic Sort</h1>
 				<p>
